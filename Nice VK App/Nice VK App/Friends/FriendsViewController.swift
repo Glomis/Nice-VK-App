@@ -13,6 +13,9 @@ class FriendsViewController: UIViewController {
     // Outlets
     @IBOutlet weak var tabelView: UITableView!
     
+    
+    var users = usersData
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,12 +29,16 @@ class FriendsViewController: UIViewController {
 extension FriendsViewController: UITableViewDelegate, UITableViewDataSource  {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return users.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "friendCell", for: indexPath)
         
+        let user = users[indexPath.row]
+        cell.textLabel?.text = user.name
         return cell
     }
+    
+    
 }
