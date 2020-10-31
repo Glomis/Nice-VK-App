@@ -9,6 +9,6 @@
 import Foundation
 
 
-var usersData = [User(name: "Pro", userAvatar: #imageLiteral(resourceName: <#T##String#>), photos: nil),
-                 User(name: "NotPro", userAvatar: nil, photos: nil),
-                 User(name: "Bro", userAvatar: nil, photos: nil)]
+var usersData = [User(firstName: "Keanu", lastName: "Reeves", userAvatar: #imageLiteral(resourceName: "hipster-1"), photos: nil),
+                 User(firstName: "Johnny", lastName: "Depp", userAvatar: #imageLiteral(resourceName: "man-1"), photos: nil),
+                 User(firstName: "Matthew", lastName: "Mcconaughey", userAvatar: #imageLiteral(resourceName: "profile-1"), photos: nil)]

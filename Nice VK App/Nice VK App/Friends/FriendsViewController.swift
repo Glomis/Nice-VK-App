@@ -13,7 +13,7 @@ class FriendsViewController: UIViewController {
     // Outlets
     @IBOutlet weak var tabelView: UITableView!
     
-    
+    // Variables
     var users = usersData
     
     override func viewDidLoad() {
@@ -33,12 +33,23 @@ extension FriendsViewController: UITableViewDelegate, UITableViewDataSource  {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "friendCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "friendCell", for: indexPath) as! FriendTableViewCell
         
         let user = users[indexPath.row]
-        cell.textLabel?.text = user.name
+        cell.configureUser(from: user)
+        
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let currentUser = users[indexPath.row]
+
+        guard let photoVC = storyboard?.instantiateViewController(withIdentifier: "photoCollectionViewController") as? PhotoCollectionViewController else { return }
+        photoVC.user = currentUser
+        
+        tableView.deselectRow(at: indexPath, animated: true)
+        navigationController?.pushViewController(photoVC, animated: true)
+    }
     
 }
