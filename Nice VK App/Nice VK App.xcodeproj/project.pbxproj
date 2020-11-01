@@ -22,6 +22,7 @@
 		49B60AB4254B623100C0E754 /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B60AB3254B623100C0E754 /* FriendTableViewCell.swift */; };
 		49B60ABE254DE23800C0E754 /* PhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B60ABD254DE23800C0E754 /* PhotoCollectionViewController.swift */; };
 		49B60AC0254DE4CA00C0E754 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B60ABF254DE4CA00C0E754 /* PhotoCollectionViewCell.swift */; };
+		49B60AC2254DF17200C0E754 /* GroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B60AC1254DF17200C0E754 /* GroupTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		49B60AB3254B623100C0E754 /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
 		49B60ABD254DE23800C0E754 /* PhotoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewController.swift; sourceTree = "<group>"; };
 		49B60ABF254DE4CA00C0E754 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		49B60AC1254DF17200C0E754 /* GroupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 			children = (
 				49347738254A08E100CB8162 /* GroupsViewController.swift */,
 				49347736254A08E100CB8162 /* AllGroupsTableViewController.swift */,
+				49B60AC1254DF17200C0E754 /* GroupTableViewCell.swift */,
 			);
 			path = Groups;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				49B60AAB254B5A5600C0E754 /* User.swift in Sources */,
 				49B60ABE254DE23800C0E754 /* PhotoCollectionViewController.swift in Sources */,
 				49120FBE253A1CD300E820BA /* AppDelegate.swift in Sources */,
+				49B60AC2254DF17200C0E754 /* GroupTableViewCell.swift in Sources */,
 				49120FC0253A1CD300E820BA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
