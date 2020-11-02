@@ -13,6 +13,6 @@ class PhotoCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var photo: UIImageView!
     
     func configure(from user: User) {
-        photo.image = user.userAvatar
+        photo.image = user.avatar
     }
 }

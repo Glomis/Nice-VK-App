@@ -9,9 +9,13 @@
 import Foundation
 
 
-var usersData = [User(firstName: "Keanu", lastName: "Reeves", userAvatar: #imageLiteral(resourceName: "hipster-1"), photos: nil),
-                 User(firstName: "Johnny", lastName: "Depp", userAvatar: #imageLiteral(resourceName: "man-1"), photos: nil),
-                 User(firstName: "Matthew", lastName: "Mcconaughey", userAvatar: #imageLiteral(resourceName: "profile-1"), photos: nil)]
+var usersData = [User(firstName: "Keanu", lastName: "Reeves", avatar: #imageLiteral(resourceName: "hipster-1"),
+                      photos: [#imageLiteral(resourceName: "keanu3"), #imageLiteral(resourceName: "keanu4"), #imageLiteral(resourceName: "keanu5")]),
+                 User(firstName: "John", lastName: "Travolta", avatar: #imageLiteral(resourceName: "beard-1"), photos: [#imageLiteral(resourceName: "Travolta3"), #imageLiteral(resourceName: "Travolta2"), #imageLiteral(resourceName: "Travolta1")]),
+                 User(firstName: "Johnny", lastName: "Depp", avatar: #imageLiteral(resourceName: "man-1"), photos: [#imageLiteral(resourceName: "Johnny3"), #imageLiteral(resourceName: "Jonny2"), #imageLiteral(resourceName: "Jonny1")]),
+                 User(firstName: "Matthew", lastName: "McConaughey", avatar: #imageLiteral(resourceName: "profile-1"),
+                      photos: [#imageLiteral(resourceName: "Mat1"), #imageLiteral(resourceName: "Mat2"), #imageLiteral(resourceName: "Mat3")])
+]
 
 
 var groupData = [Group(name: "18+", avatar: #imageLiteral(resourceName: "gender"), description: nil, subscribers: 325768),

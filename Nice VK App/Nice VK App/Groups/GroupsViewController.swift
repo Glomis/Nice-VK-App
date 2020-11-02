@@ -13,6 +13,7 @@ class GroupsViewController: UIViewController {
     // Outlets
     @IBOutlet weak var tabelView: UITableView!
     
+    // Variables
     var myGroups = [Group(name: "Marvel", avatar: #imageLiteral(resourceName: "marvel"), description: nil, subscribers: 489500),
                     Group(name: "Swift Developers", avatar: #imageLiteral(resourceName: "swift"), description: nil, subscribers: 1430),
                     Group(name: "Anime Party", avatar: #imageLiteral(resourceName: "totoro"), description: nil, subscribers: 8700)
@@ -26,7 +27,6 @@ class GroupsViewController: UIViewController {
     }
 }
 
-// MARK: Extensions
 extension GroupsViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

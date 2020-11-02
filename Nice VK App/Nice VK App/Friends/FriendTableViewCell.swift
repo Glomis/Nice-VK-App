@@ -15,7 +15,7 @@ class FriendTableViewCell: UITableViewCell {
     
     func configureUser (from user: User) {
         nameLabel.text = user.firstName + " " + user.lastName
-        avatarView.image = user.userAvatar
+        avatarView.image = user.avatar
     }
 
 }

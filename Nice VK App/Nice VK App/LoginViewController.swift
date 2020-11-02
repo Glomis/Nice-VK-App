@@ -22,12 +22,18 @@ class LoginViewController: UIViewController {
         passwordTF.delegate = self
     }
     
-    @IBAction func pressed(_ sender: UIButton) {
+    // MARK: IBActions
+    @IBAction func enterBtnPressed(_ sender: UIButton) {
         guard loginTF.text == login, passwordTF.text == password else { return }
         performSegue(withIdentifier: "successfulCheck", sender: sender)
     }
+    
+    @IBAction func screenTapped(_ sender: Any) {
+        view.endEditing(true)
+    }
 }
 
+// MARK: Work with Text Fields
 extension LoginViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if textField == loginTF {
